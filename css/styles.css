@@ -89,6 +89,7 @@ header .nav {
     color: #2E2F42;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
 }
 
 .nav-list .nav-link:hover,
@@ -96,25 +97,19 @@ header .nav {
     color: #404bbf;
 }
 
-/* .nav-list .nav-link::before,
-.nav-list .nav-link::after {
-    
+ .nav-link::after {    
     content: "";
-    width: 24px;
-    height: 2px;
-    background-color: #fff;
-}
-
-.nav-list .nav-link:active::before
-.nav-list .nav-link:active::after{
+    position: absolute;    
     background-color: #404bbf;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
 }
 
-/* .nav-list .nav-link:active {
+.nav-link.caret::after {
     width: 100%;
-    background: #404bbf;
-    
-} */ 
+} 
 
 .contact {
     display: flex;
