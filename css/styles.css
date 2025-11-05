@@ -95,6 +95,7 @@ header .nav {
     padding-top: 24px;
     padding-bottom: 24px;
     position: relative;
+    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -303,7 +304,8 @@ header .nav {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-list .team_link_icon:hover {
+.team-icon-list .team_link_icon:hover,
+.team-icon-list .team_link_icon:focus {
     background-color: #404BBF;
 }
 
@@ -520,21 +522,12 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_link_icon:hover,
 .footer_link_icon:focus {
     background-color: #31d0aa;
-}
-
-.footer-icon-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;         
-    border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-list .footer_link_icon:hover {
@@ -545,4 +538,13 @@ footer .container {
     fill: #f4f4fd;
 }
 
+.footer-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;         
+    border: none;
+    
+}
 /*  #endregion footer */
